@@ -96,17 +96,11 @@
             gap: 1rem;
         }
         
-        .logo-icon {
+        .logo-image {
             width: 60px;
             height: 60px;
-            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
             border-radius: 50%;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.8rem;
+            object-fit: contain;
         }
         
         .logo-text h1 {
@@ -595,16 +589,13 @@
 <body>
     <!-- Header -->
     <header>
-        <div class="container header-container">
-            <div class="logo">
-                <div class="logo-icon">
-                    <i class="fas fa-person-running"></i>
-                </div>
-                <div class="logo-text">
-                    <h1>Top Fitness</h1>
-                    <p>Healthy Today, Happy Tomorrow</p>
-                </div>
+        <div class="logo">
+            <img src="your-logo-image.jpg" alt="Top Fitness Logo" class="logo-image">
+            <div class="logo-text">
+                <h1>Top Fitness</h1>
+                <p>Healthy Today, Happy Tomorrow</p>
             </div>
+        </div>
             
             <button class="mobile-menu-btn" id="mobileMenuBtn">
                 <i class="fas fa-bars"></i>
